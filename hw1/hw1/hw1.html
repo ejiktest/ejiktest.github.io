@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+
+    <style>
+    #firstline {
+      color:#1946ba;
+      font-size: 200%;
+      font-weight: bold;
+    }
+    #title {
+      font-family: 'Open Sans';
+      font-weight: bold;
+      font-size: 150%;
+      margin-left: 10px;
+    }
+    #quote {
+      font-family: 'Open Sans';
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+    #button {
+      background-color: #ec0b43;
+      color: #F5F5F5;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    </style>
+
+    <script language="javascript">
+    function output() {
+    	var b=[];
+    	b[0]="We do not remember days, we remember moments";
+    	b[1]="Everyone has one's own path";
+      b[2]="World belongs to the patient";
+      b[3]="Everyone sees the world in one's own way";
+    	var i=Math.floor(Math.random()*b.length);
+    	document.getElementById("quote").innerHTML = (b[i]);
+    }
+    </script>
+
+</head>
+<body>
+
+  <div id = "firstline"> First VIS101 Homework </div>
+  <div id = "title"> Quote of the day: </div>
+  <svg width="800" height="50">
+    <rect x="20" y="0" width="10" height="50" fill="grey"/>
+    <text id = "quote" x="50" y="20" font-family: "Open Sans" font-size="14" stroke="black">We do not remember days, we remember moments</text>
+  </svg>
+
+  <div></div>
+  <button id="button" onclick="output()">Change Quote Of the Day</button>
+  <div id="quote"></div>
+
+
+</body>
+</html>
